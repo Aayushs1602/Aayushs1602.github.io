@@ -148,12 +148,12 @@
   </header>
 
   <!-- ========================================================================= -->
-  <!-- 1. HERO SECTION (100VH FULL VIEWPORT WITH AVATAR)                         -->
+  <!-- 1. HERO SECTION (ORIGINAL FONT & FORMAT: 100VH DESKTOP, SCROLLABLE MOBILE)-->
   <!-- ========================================================================= -->
-  <div class="relative w-full h-screen min-h-[720px] overflow-hidden">
+  <div class="relative w-full min-h-screen lg:h-screen lg:min-h-[720px] overflow-x-hidden">
     
     <!-- Luminous Canvas strictly bound inside Hero -->
-    <canvas id="particle-canvas" class="absolute inset-0 w-full h-full pointer-events-auto z-0"></canvas>
+    <canvas id="particle-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
 
     <!-- Ambient Glow inside Hero -->
     <div class="absolute inset-0 pointer-events-none z-0 opacity-40" style="background: radial-gradient(circle at 50% 25%, rgba(124, 58, 237, 0.25) 0%, transparent 65%);"></div>
@@ -162,7 +162,7 @@
     <div class="absolute bottom-0 inset-x-0 h-44 bg-gradient-to-b from-transparent via-[#040507]/80 to-[#040507] pointer-events-none z-10"></div>
 
     <!-- Hero Content Container -->
-    <section id="hero" class="relative z-20 w-full h-full flex flex-col justify-between items-center pt-24 pb-6 px-4 sm:px-6 max-w-7xl mx-auto pointer-events-none">
+    <section id="hero" class="relative z-20 w-full min-h-screen lg:h-full flex flex-col justify-between items-center pt-24 pb-8 sm:pb-6 px-4 sm:px-6 max-w-7xl mx-auto">
       
       <!-- Top Hero Header & Narrative -->
       <div class="text-center max-w-4xl pt-1 pointer-events-auto flex flex-col items-center">
